@@ -1,0 +1,77 @@
+.uniform-header{
+    background-image: url('../images/event/09.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.date-line{
+    position: relative;
+    height: 100px;
+    width: 110px;
+}
+.date-line::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    transform: rotate(30deg);
+}
+.uniform-text{
+    h2{
+        padding: 32px 40px;
+        font-size: 48px;
+    }
+}
+.unifron-date{
+    padding: 48px 40px;
+}
+@include media-breakpoint-down(xxl){
+    .uniform-header-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .uniform-text-section{
+        flex-direction: row !important;
+    }
+    .uniform-text{
+        width: 33.32%;
+        h2{
+            padding: 25px 16px;
+            height: 100%;
+        }
+    }
+    .unifron-date{
+        padding: 14px 24px;
+        width: 66.64%;
+        flex-direction: row !important;
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .uniform-header{
+        height: 204px;
+        margin: 12px !important;
+    }
+    .uniform-text{
+        h2{
+            font-size: $fs-24;
+        }
+    }
+    .unifron-date{
+        h3{
+           font-size: $fs-22; 
+        }
+        p{
+            font-size: $fs-16 !important; 
+        }
+    }
+    .date-line{
+        position: relative;
+        height: 50px;
+        width: 78px;
+    }
+    .date-line::before{
+        height: 50px;
+    }
+}

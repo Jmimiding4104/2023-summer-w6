@@ -1,0 +1,41 @@
+.pay-step01-wrap{
+    max-width: 650px;
+}
+.step-line{
+    position: relative;
+}
+.step-line-number{
+    p:first-child{
+        width: 48px;
+        height: 48px;
+        background-color: black;
+        color: yellow;
+        font-size: 20px;
+    }
+    p{
+        z-index: 99;
+    }
+}
+.step-line-none{
+        background-color: $background !important;
+        color: black !important;
+        border: 1px solid black;
+}
+.step-line::after{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background-color: black;
+}
+
+.payStep-content{
+    .personal{
+        img{
+            width: 32px;
+        }
+    }
+}

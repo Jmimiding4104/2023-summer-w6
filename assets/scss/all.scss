@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Noto+Serif+TC:wght@400;700&display=swap');
+
+@import '../iconfont/icofont.css';
+
+@import "../node_modules/bootstrap/scss/functions"; // 必要的方法
+@import "helpers/variables"; // 自行定義的變數路徑
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap"; // Bootstrap 完整原始碼
+
+@import './utilities/global.scss';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/marquee.scss';
+
+@import './pages/event';
+@import './pages/index.scss';
+@import './pages/uniform.scss';
+@import './pages/payStep.scss';
+@import './pages/login.scss';

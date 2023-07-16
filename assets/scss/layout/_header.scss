@@ -1,0 +1,106 @@
+h1{
+  img{
+    width: 53px;
+  }
+}
+
+header{
+  .input{      
+    a{
+      width: 51px;
+      background: black;
+    }
+    i{
+      font-size: 19px;
+      color: yellow;
+    }
+  }
+  .right{
+    i{
+      font-size: 18px;
+    }
+    p{
+      line-height: 18px;
+    }
+  }
+}
+
+.header-hamberger{
+  display: none;
+  span{
+    height: 54px;
+    font-size: 30px;
+  }
+}
+
+.header-hamberger-list{
+  max-height: 0;
+  overflow: hidden;
+  transition: .5s;
+  a{
+    font-size: 32px;
+  }
+}
+
+@include media-breakpoint-down(lg){
+  h1 span:last-child{
+    display: none;
+  }
+  .header-hamberger{
+    display: block;
+  }
+  .input input{
+    margin-left: 25px !important;
+    max-width: 207px;
+  }
+  .right{
+    display: none !important;
+  }
+}
+
+@include media-breakpoint-down(md){
+  header{
+    .input a{
+      width: 39px;
+      i{
+        font-size: $fs-16;
+      }
+    }
+    input{
+      max-width: 168px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  h1 span{
+    display: none;
+  }
+  h1 img{
+    width: 41px;
+  }
+  .header-img{
+    height: 350px !important;
+    h3{
+      font-size: $fs-18;
+    }
+  }
+  header .input-text{
+    padding: 0.5rem 0.75rem !important;
+    max-width: 140px;
+  }
+  .header-hamberger{
+    span{
+      height: 41px;
+      padding: 0px 12px !important;
+    }
+  }
+  .dream{
+    h2{
+      font-size: $fs-18;
+    }
+    p{
+      font-size: $fs-14;
+    }
+  }
+}
