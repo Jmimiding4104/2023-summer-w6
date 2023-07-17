@@ -1,0 +1,40 @@
+.hover-scale:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+.hover-start-sale:hover{
+    background-color: yellow;
+    border-radius: 50px;
+}
+.hover-underline:hover{
+    text-decoration: underline;
+}
+.type-section::before{
+    content: '';
+    width: 0px;
+    height: 100%;
+    display: block;
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.type-section:hover{
+    border-left: 4px yellow solid;
+    color: white;
+}
+.type-section:hover::before{
+    width: 100%;
+}
+.hover-btn-dark:hover{
+    color: yellow !important;
+}
+.hover-dark-yellow:hover{
+    color: $btn-dark-yellow;
+}
+.hover-bgdark-btn-dark:hover{
+    background: black;
+    color: yellow !important;
+}

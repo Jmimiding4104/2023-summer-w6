@@ -37,46 +37,43 @@
         </li>
       </ul>
       <div class="personal">
-        <form action="" class="mb-60">
+        <form class="row mb-60 needs-validation" novalidate>
           <div class="title d-flex flex-column aj-centaer mt-5 mb-3">
             <img src="../assets/images/sparkler.png" alt="title" />
             <h3 class="fs-4 mt-3 fw-bold">聯絡人資料</h3>
           </div>
-          <div class="d-flex flex-column mb-3">
-            <label for="name" class="mb-2"> 聯絡人姓名 </label>
-            <input
-              type="text"
-              id="name"
-              class="px-3 py-2"
-              placeholder="請輸入聯絡人名稱"
-            />
+          <div class="col-12 mb-3">
+            <label for="name" class="mb-2 form-label">聯絡人資料</label>
+            <div class="input-group has-validation">
+              <input type="text" class="bg-color form-control px-3 py-2 border-2 border-dark" id="name" aria-describedby="inputGroupPrepend" placeholder="請輸入聯絡人名稱" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
           </div>
-          <div class="d-flex flex-column mb-3">
-            <label for="name" class="mb-2"> 聯絡人姓名 </label>
-            <input
-              type="text"
-              id="name"
-              class="px-3 py-2"
-              placeholder="請輸入Email"
-            />
+          <div class="col-12 mb-3">
+            <label for="name" class="mb-2 form-label">Email</label>
+            <div class="input-group has-validation">
+              <input type="text" class="bg-color form-control px-3 py-2 border-2 border-dark" id="name" aria-describedby="inputGroupPrepend" placeholder="請輸入Email" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
           </div>
-          <div class="d-flex flex-column mb-4">
-            <label for="name" class="mb-2"> 聯絡人姓名 </label>
-            <input
-              type="text"
-              id="name"
-              class="px-3 py-2"
-              placeholder="請輸入手機號碼"
-            />
+          <div class="col-12 mb-4">
+            <label for="name" class="mb-2 form-label">手機</label>
+            <div class="input-group has-validation">
+              <input type="text" class="bg-color form-control px-3 py-2 border-2 border-dark" id="name" aria-describedby="inputGroupPrepend" placeholder="請輸入手機號碼" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
           </div>
-          <div class="row mb-3">
-            <button type="button" class="btn btn-dark mx-auto d-flex aj-centaer col-8">
+          <div class="mb-3">
+            <button type="submit" class="btn btn-dark mx-auto d-flex aj-centaer col-8 hover-bgdark-btn-dark">
               確認表單資料<span class="material-symbols-outlined">
                 double_arrow
               </span>
             </button>
           </div>
-          <a href="" class="d-flex mx-auto bg-color aj-centaer">取消購票</a>
+          <a href="" class="d-flex mx-auto bg-color aj-centaer hover-dark-yellow">取消購票</a>
         </form>
       </div>
     </div>

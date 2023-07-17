@@ -45,19 +45,18 @@
         </li>
       </ul>
       <div class="personal">
-        <form action="" class="mb-60">
+        <form class="row mb-60 needs-validation" novalidate>
           <div class="title d-flex flex-column aj-centaer mt-5 mb-3">
             <img src="../assets/images/sparkler.png" alt="title" />
             <h3 class="fs-4 mt-3 fw-bold">結帳資訊</h3>
           </div>
-          <div class="d-flex flex-column mb-3">
-            <label for="name" class="mb-2">取票資訊</label>
-            <input
-              type="text"
-              id="name"
-              class="px-3 py-2 mb-1"
-              placeholder="請輸入身分證字號或護照號碼"
-            />
+          <div class="col-12 mb-3">
+            <label for="name" class="mb-2 form-label">取票資訊</label>
+            <div class="input-group has-validation mb-1">
+              <input type="text" class="bg-color form-control px-3 py-2 border-2 border-dark" id="name" aria-describedby="inputGroupPrepend" placeholder="請輸入身分證字號或護照號碼" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
             <p>
               請輸入您的<span class="text-color-peach">身分證字號</span
               >供取票使用，外籍人士請輸入<span class="text-color-peach"
@@ -74,9 +73,9 @@
             <input type="radio" name="pay" id="atm" value="atm" />
             <label for="atm">ATM虛擬帳號</label>
           </div>
-          <div class="row mb-3">
-            <button type="button" class="btn btn-dark mx-auto d-flex aj-centaer col-8">
-                確認訂單並繳費 $8000<span class="material-symbols-outlined">
+          <div class="mb-3">
+            <button type="submit" class="btn btn-dark mx-auto d-flex aj-centaer col-8 hover-bgdark-btn-dark">
+              確認訂單並繳費 $8000<span class="material-symbols-outlined">
                 double_arrow
               </span>
             </button>
